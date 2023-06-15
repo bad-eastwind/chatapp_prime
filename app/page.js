@@ -6,7 +6,7 @@ import UIPage from './UIPage'
 function Home(){
   return(
     <div>
-      Testing
+      Testing Now
       {/* <ChatApp/> */}
       <UIPage/>
     </div>
