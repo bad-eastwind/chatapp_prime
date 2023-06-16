@@ -1,14 +1,14 @@
 // "use client"
 // import {socketclient} from './socketclient'
 // import ChatApp from './ChatApp.js';
-import UIPage from './UIPage'
+import Topheader from './UIcomponents/Topheader'
+import Secondheader from './UIcomponents/Secondheader'
 
 function Home(){
   return(
     <div>
-      Testing Now
-      {/* <ChatApp/> */}
-      <UIPage/>
+      <Topheader/>
+      <Secondheader/>
     </div>
   )
 }
