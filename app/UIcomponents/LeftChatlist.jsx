@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 
 export default function AlignItemsList() {
   return (
-    <List  sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', borderRadius: '15px', overflow: 'hidden' }}>
+    <List  sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper', marginLeft: '40px', marginTop: '25px', borderRadius: '15px', overflow: 'hidden' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
           <Avatar alt="John Doe" src="/static/images/avatar/1.jpg" />

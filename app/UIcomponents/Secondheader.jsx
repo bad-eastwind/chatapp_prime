@@ -7,6 +7,7 @@ import { styled } from '@mui/system';
 
 const ExtendedFab = styled(Fab)({
     width: '300px', // Set the desired width here
+    height: '60px',
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'center',
@@ -33,7 +34,7 @@ export default function FloatingActionButtons() {
     <div>
       <FabContainer>
         <FabContainer1>
-          <Box sx={{ '& > :not(style)': { m: 1 } }}>
+          <Box sx={{ marginLeft: '40px' , '& > :not(style)': { m: 1 } }}>
             <ExtendedFab variant="extended" size="large">
               <span style={{ marginRight: '8px' }}>
                 <SearchRoundedIcon sx={{ mr: 1 }} />
