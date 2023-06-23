@@ -3,14 +3,13 @@
 // import ChatApp from './ChatApp.js';
 import Topheader from './UIcomponents/Topheader'
 import Secondheader from './UIcomponents/Secondheader'
-import LeftChatlist from './UIcomponents/LeftChatlist'
-
+import ChatScreen from './UIcomponents/ChatScreen'
 function Home(){
   return(
     <div>
       <Topheader/>
       <Secondheader/>
-      <LeftChatlist/>
+      <ChatScreen/>
     </div>
   )
 }
