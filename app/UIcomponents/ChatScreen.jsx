@@ -2,13 +2,14 @@
 import Chatbox from './Chatbox'
 import LeftChatlist from './LeftChatlist'
 import React from 'react';
-import Avatar from '@mui/material/Avatar';
+import Chatbg from './Chatbg'
 
 const ChatScreen = () => {
     return (
       <div style={{ display: 'flex'}}>
         <LeftChatlist />
-        <Chatbox />
+        <Chatbg/>
+        {/* <Chatbox /> */}
       </div>
     );
   };

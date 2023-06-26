@@ -26,7 +26,7 @@ const FabContainer1 = styled('div')({
 
 const FabContainer = styled('div')({
   display: 'flex',
-  gap: '760px', // Set the desired gap between the FABs
+  gap: '600px', // Set the desired gap between the FABs
 });
 
 export default function FloatingActionButtons() {
