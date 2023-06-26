@@ -2,7 +2,7 @@
 import React from 'react';
 import Chatbubble from './Chatbubble';
 
-const ChatPage = () => {
+const Chatbox = () => {
   return (
     <div>
       <Chatbubble text="Hello!" isSender={false} />
@@ -11,4 +11,4 @@ const ChatPage = () => {
   );
 };
 
-export default ChatPage;
+export default Chatbox;
