@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from "@material-ui/core/Typography";
 import Chatbox from './Chatbox'
+import Chatbottom from './Chatbottom';
 
 export default function Chatbg() {
   return (
@@ -22,6 +23,7 @@ export default function Chatbg() {
       <Paper elevation={0}>
       <Typography >
         <Chatbox/>
+        <Chatbottom/>
       </Typography>
       </Paper>
     </Box>

@@ -5,6 +5,7 @@ import Topheader from './UIcomponents/Topheader'
 import Secondheader from './UIcomponents/Secondheader'
 import ChatScreen from './UIcomponents/ChatScreen'
 import Chatbg from './UIcomponents/Chatbg'
+import Chatbottom from './UIcomponents/Chatbottom'
 function Home(){
   return(
     <div>
@@ -12,6 +13,7 @@ function Home(){
       <Secondheader/>
       <ChatScreen/>
       {/* <Chatbg/> */}
+      {/* <Chatbottom/> */}
     </div>
   )
 }
