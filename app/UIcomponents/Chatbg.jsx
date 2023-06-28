@@ -5,6 +5,14 @@ import Paper from '@mui/material/Paper';
 import Typography from "@material-ui/core/Typography";
 import Chatbox from './Chatbox'
 import Chatbottom from './Chatbottom';
+import Fab from "@mui/material/Fab";
+import { styled } from "@mui/system";
+import SendIcon from '@mui/icons-material/Send';
+
+const FabContainer1 = styled('div')({
+  display: 'flex',
+  gap: '20px', // Set the desired gap between the FABs
+});
 
 export default function Chatbg() {
   return (
@@ -13,7 +21,7 @@ export default function Chatbg() {
         display: 'flex',
         flexWrap: 'wrap',
         '& > :not(style)': {
-          m: 1,
+          m: 2,
           width: 800,
           height: 700,
           borderRadius: '15px',
@@ -23,7 +31,12 @@ export default function Chatbg() {
       <Paper elevation={0}>
       <Typography >
         <Chatbox/>
+        <FabContainer1>
         <Chatbottom/>
+        <Fab color = "Error">
+        <SendIcon />
+        </Fab>
+        </FabContainer1>
       </Typography>
       </Paper>
     </Box>

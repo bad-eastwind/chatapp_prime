@@ -1,7 +1,6 @@
 "use client";
 import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
-import SendIcon from '@mui/icons-material/Send';
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
@@ -9,7 +8,7 @@ import { styled } from "@mui/system";
 
 const ExtendedFab = styled(Fab)({
   width: "550px", // Set the desired width here
-  height: "60px",
+  // height: "60px",
   display: "flex",
   justifyContent: "flex-start",
   alignItems: "center",
@@ -32,9 +31,6 @@ export default function Chatbottom() {
             <AttachFileIcon sx={{ mr: 1 }} />
           </span>
         </ExtendedFab>
-        <Fab color="primary" aria-label="add">
-        <SendIcon />
-        </Fab>
       </Box>
       </FabContainer1>
     </div>
