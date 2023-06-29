@@ -8,7 +8,6 @@ import Chatbox from './Chatbox'
 import Chatbottom from './Chatbottom';
 import Fab from "@mui/material/Fab";
 import { styled } from "@mui/system";
-import SendIcon from '@mui/icons-material/Send';
 
 const FabContainer1 = styled('div')({
   display: 'flex',
