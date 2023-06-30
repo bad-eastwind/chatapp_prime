@@ -5,8 +5,9 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
+import InputAdornment from '@mui/material/InputAdornment';
 import { styled } from "@mui/system";
-
+import { Icon } from "@mui/material";
 // const ExtendedFab = styled(Fab)({
 //   width: "550px", // Set the desired width here
 //   // height: "60px",
@@ -20,14 +21,30 @@ const FabContainer1 = styled('div')({
     gap: '20px', // Set the desired gap between the FABs
   });
 const handleFocus = () => {
-  const label = document.querySelector(".MuiInputLabel-root");
+  const label = document.querySelector("Type your message");
   label.style.display = "none";
 };
 
 const handleBlur = () => {
-  const label = document.querySelector(".MuiInputLabel-root");
+  const label = document.querySelector("Type your message");
   label.style.display = "block";
 };
+
+const TextFieldWithIcon = () => {
+  return (
+    <TextField id="filled-basic"  variant="filled" onFocus={handleFocus} onBlur={handleBlur} 
+      InputProps={{
+        startAdornment: (
+          <InputAdornment position="start">
+            <SentimentSatisfiedAltIcon/>
+          </InputAdornment>
+        )
+      }}>
+        Type your message
+      </TextField>
+  );
+};
+
 
 export default function Chatbottom() {
   return (
@@ -39,10 +56,9 @@ export default function Chatbottom() {
       }}
       noValidate
       autoComplete="off">
-      <TextField id="filled-basic" label="Type your message" variant="filled" onFocus={handleFocus} onBlur={handleBlur} sx = {{borderRadius: '30px'}}>
-        
-      <SentimentSatisfiedAltIcon sx={{ mr: 1 }} />
-      </TextField>
+        {/* <TextField id="filled-basic" label="Type your message" variant="filled" onFocus={handleFocus} onBlur={handleBlur} sx = {{borderRadius: '30px'}}>
+        </TextField> */}
+      <TextFieldWithIcon />
       </Box>
       </FabContainer1>
     </div>
